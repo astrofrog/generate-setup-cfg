@@ -110,7 +110,6 @@ def main():
     # Populate the options
     conf.set('options', 'zip_safe', str(not os.path.exists(os.path.join(egg_info_dir, 'not-zip-safe'))))
     conf.set('options', 'packages', 'find:')
-    conf.set('options', 'include_package_data', str(True))
     if dist.requires_python is not None:
         conf.set('options', 'python_requires', dist.requires_python)
 
